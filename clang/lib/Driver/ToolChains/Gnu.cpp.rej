@@ -1,0 +1,13 @@
+--- lib/Driver/ToolChains/Gnu.cpp
++++ lib/Driver/ToolChains/Gnu.cpp
+@@ -1839,10 +1795,6 @@ void Generic_GCC::GCCInstallationDetector::AddDefaultGCCPrefixes(
+       "powerpc64le-linux-gnu", "powerpc64le-unknown-linux-gnu",
+       "powerpc64le-suse-linux", "ppc64le-redhat-linux"};
+ 
+-  static const char *const RISCV32LibDirs[] = {"/lib", "/lib32"};
+-  static const char *const RISCVTriples[] = {"riscv32-unknown-linux-gnu",
+-                                             "riscv64-unknown-linux-gnu"};
+-
+   static const char *const SPARCv8LibDirs[] = {"/lib32", "/lib"};
+   static const char *const SPARCv8Triples[] = {"sparc-linux-gnu",
+                                                "sparcv8-linux-gnu"};
